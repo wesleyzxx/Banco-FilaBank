@@ -9,5 +9,5 @@ def docs(cpf, dataN):
         return("Documento válido")
     else:
         return("Caracteres inválidos")
-print(nome(input('Qual é o seu nome: ')))
-print(docs(input('Qual é o seu cpf?: '), input('Em qual dia você nasceu?: ')))
+print(nome(input('Digite seu nome: ')))
+print(docs(input('Digite seu CPF: '), input('Digite sua data de nascimento: ')))
