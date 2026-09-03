@@ -1,5 +1,5 @@
 def nome(nome):
-    if nome.isalpha() and nome.isspace:
+    if nome.isalpha() and nome.isspace():
         return("Nome válido")
     else:
         return("Caracteres inválidos")
