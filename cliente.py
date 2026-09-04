@@ -1,13 +1,15 @@
-def nome(nome):
-    if nome.isalpha() and nome.isspace():
-        return("Nome válido")
-    else:
-        return("Caracteres inválidos")
+def cadastrar_cliente():
+    print("=== CADASTRO DE CLIENTE ===")
 
-def docs(cpf, dataN):
-    if cpf.isnumeric() and dataN.isnumeric():
-        return("Documento válido")
-    else:
-        return("Caracteres inválidos")
-print(nome(input('Digite seu nome: ')))
-print(docs(input('Digite seu CPF: '), input('Digite sua data de nascimento: ')))
+    nome = input("Nome completo: ")
+    cpf = input("CPF: ")
+    data_nascimento = input("Data de nascimento: ")
+
+    print("=== DADOS DO CLIENTE ===")
+    print("Nome:", nome)
+    print("CPF:", cpf)
+    print("Data de nascimento:", data_nascimento)
+
+    print("Cliente cadastrado com sucesso!")
+
+    return nome
