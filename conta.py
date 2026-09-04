@@ -1,5 +1,5 @@
 def criar_conta(nome):
-    print("\n=== CRIAÇÃO DA CONTA ===")
+    print("=== CRIAÇÃO DA CONTA ===")
     print("Cliente:", nome)
 
     print("Conta criada com sucesso!")

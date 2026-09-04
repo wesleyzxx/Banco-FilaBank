@@ -3,7 +3,7 @@ from conta import criar_conta, consultar_saldo, depositar, sacar
 
 
 print("-------------------------------")
-print("= BEM VINDO AO BANCO FILABANK =")
+print("- BEM VINDO AO BANCO FILABANK -")
 print("-------------------------------")
 
 
@@ -11,7 +11,7 @@ nome = cadastrar_cliente()
 
 saldo = criar_conta(nome)
 
-print("\n=== MENU ===")
+print("=== MENU ===")
 print("1 - Consultar saldo")
 print("2 - Depositar")
 print("3 - Sacar")
