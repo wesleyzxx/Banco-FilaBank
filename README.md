@@ -1,4 +1,4 @@
-# 🏛️ Banco-FilaBank
+# 🏛️ Banco FilaBank
 
 Projeto acadêmico desenvolvido em Python para representar, de forma simples, o funcionamento de um sistema bancário.
 
