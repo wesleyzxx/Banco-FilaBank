@@ -25,6 +25,6 @@ def sacar(saldo, valor):
          print("Saldo insuficiente.")
      else:  
           saldo = saldo - valor 
-           print("Sague realizado com sucesso!")
+           print("Saque realizado com sucesso!")
 
        return saldo                                                                                                  )
