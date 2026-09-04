@@ -23,15 +23,6 @@ A aplicação permite registrar clientes, criar suas contas e realizar operaçõ
 
 ---
 
-## 💻 Ferramentas e Linguagem
-
-* **Python** — desenvolvimento da aplicação
-* **Visual Studio Code** — ambiente utilizado para programação
-* **Git** — controle de versões
-* **GitHub** — armazenamento e acompanhamento do projeto
-
----
-
 
 ## 📚 Finalidade do Projeto
 
