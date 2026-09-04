@@ -1,6 +1,6 @@
 def criar_conta(nome):
     print("\n=== CRIAÇÃO DA CONTA ===")
-    print("Cliebte: ", nome)
+    print("Cliente: ", nome)
 
     print("Conta criada com sucesso!")
          return 0
@@ -20,11 +20,11 @@ def depositar(saldo, valor):
 
 def sacar(saldo, valor): 
      if valor <= 0:
-         print("Valor inválido."
+         print("Valor inválido.")
      elif valor > saldo:
          print("Saldo insuficiente.")
      else:  
           saldo = saldo - valor 
-           print("Sague realizado com sucesso!")
+           print("Saque realizado com sucesso!")
 
        return saldo                                                                                                  )
