@@ -1,33 +1,26 @@
-def criar_conta(nome):
-    print("=== CRIAÇÃO DA CONTA ===")
-    print("Cliente:", nome)
+def criar_conta(contas, clientes, agencias):
+    print("\n=== CRIAÇÃO DE CONTA ===")
+
+    cpf = input("CPF do cliente: ")
+
+    cliente = procurar_cliente(clientes, cpf)
+
+    if cliente == []:
+        print("Cliente não encontrado.")
+        return
+
+    numero_agencia = int(input("Número da agência: "))
+
+    agencia = procurar_agencia(agencias, numero_agencia)
+
+    if agencia == []:
+        print("Agência não encontrada.")
+        return
+
+    numero_conta = len(contas) + 1
+
+    conta = [numero_conta, cpf, numero_agencia, 0]
+    contas.append(conta)
 
     print("Conta criada com sucesso!")
-    return 0
-
-
-def consultar_saldo(saldo):
-    print("Seu saldo atual é: R$", saldo)
-    return saldo
-
-
-def depositar(saldo, valor):
-    if valor > 0:
-        saldo = saldo + valor
-        print("Depósito realizado com sucesso!")
-    else:
-        print("Valor inválido.")
-
-    return saldo
-
-
-def sacar(saldo, valor):
-    if valor <= 0:
-        print("Valor inválido.")
-    elif valor > saldo:
-        print("Saldo insuficiente.")
-    else:
-        saldo = saldo - valor
-        print("Saque realizado com sucesso!")
-
-    return saldo
+    print("Número da conta:", numero_conta)
