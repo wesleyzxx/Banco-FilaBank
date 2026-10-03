@@ -4,7 +4,11 @@ def cadastrar_agencia(agencias):
     numero = int(input("Número da agência: "))
     nome = input("Nome da agência: ")
 
-    agencia = [numero, nome]
+    agencia = {
+        "numero": numero,
+        "nome": nome
+    }
+
     agencias.append(agencia)
 
     print("Agência cadastrada com sucesso!")

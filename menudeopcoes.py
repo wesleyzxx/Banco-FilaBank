@@ -3,10 +3,14 @@ import json
 from cliente import cadastrar_cliente
 from conta import criar_conta
 from agencia import cadastrar_agencia
+
 from cadastrarclientes import listar_clientes, procurar_cliente
 from cadastrarcontas import listar_contas, procurar_conta
 from cadastraragencias import listar_agencias, procurar_agencia
+
+from main import depositar, sacar, transferir, consultar_saldo, salvar_dados
 from relatoriodobanco import relatorio_banco
+
 
 def carregar_dados():
     try:
@@ -17,18 +21,18 @@ def carregar_dados():
         return dados
 
     except:
-        return [[], [], []]
+        return {
+            "clientes": [],
+            "contas": [],
+            "agencias": []
+        }
 
-
-clientes = []
-contas = []
-agencias = []
 
 dados = carregar_dados()
 
-clientes = dados[0]
-contas = dados[1]
-agencias = dados[2]
+clientes = dados["clientes"]
+contas = dados["contas"]
+agencias = dados["agencias"]
 
 
 opcao = ""

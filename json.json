@@ -1,5 +1,39 @@
-[
-    [],
-    [],
-    []
-]
+{
+    "clientes": [
+        {
+            "nome": "Susanne Sundfor",
+            "cpf": "52998224725",
+            "data_nascimento": "22/01/2001"
+        }
+    ],
+    "contas": [
+        {
+            "numero": 1,
+            "cpf": "52998224725",
+            "agencia": 1,
+            "tipo": "corrente",
+            "saldo": 450.0
+        },
+        {
+            "numero": 2,
+            "cpf": "52998224725",
+            "agencia": 1,
+            "tipo": "poupan\u00e7a",
+            "saldo": 50.0
+        }
+    ],
+    "agencias": [
+        {
+            "numero": 1,
+            "nome": "1"
+        },
+        {
+            "numero": 1,
+            "nome": "1"
+        },
+        {
+            "numero": 1,
+            "nome": "Agencia Centro"
+        }
+    ]
+}

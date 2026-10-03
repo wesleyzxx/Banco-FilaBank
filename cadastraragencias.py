@@ -5,14 +5,14 @@ def listar_agencias(agencias):
         print("Nenhuma agência cadastrada.")
     else:
         for agencia in agencias:
-            print("Número:", agencia[0])
-            print("Nome:", agencia[1])
+            print("Número:", agencia["numero"])
+            print("Nome:", agencia["nome"])
             print("------------------------")
 
 
 def procurar_agencia(agencias, numero):
     for agencia in agencias:
-        if agencia[0] == numero:
+        if agencia["numero"] == numero:
             return agencia
 
-    return []
+    return {}

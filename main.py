@@ -1,5 +1,14 @@
+import json
+
+from cadastrarcontas import procurar_conta
+
+
 def salvar_dados(clientes, contas, agencias):
-    dados = [clientes, contas, agencias]
+    dados = {
+        "clientes": clientes,
+        "contas": contas,
+        "agencias": agencias
+    }
 
     arquivo = open("json.json", "w")
     json.dump(dados, arquivo, indent=4)
@@ -16,14 +25,15 @@ def depositar(contas):
 
     conta = procurar_conta(contas, numero)
 
-    if conta == []:
+    if conta == {}:
         print("Conta não encontrada.")
     elif valor <= 0:
         print("Valor inválido.")
     else:
-        conta[3] = conta[3] + valor
+        conta["saldo"] = conta["saldo"] + valor
+
         print("Depósito realizado com sucesso!")
-        print("Novo saldo: R$", conta[3])
+        print("Novo saldo: R$", conta["saldo"])
 
 
 def sacar(contas):
@@ -34,16 +44,18 @@ def sacar(contas):
 
     conta = procurar_conta(contas, numero)
 
-    if conta == []:
+    if conta == {}:
         print("Conta não encontrada.")
     elif valor <= 0:
         print("Valor inválido.")
-    elif valor > conta[3]:
+    elif valor > conta["saldo"]:
         print("Saldo insuficiente.")
     else:
-        conta[3] = conta[3] - valor
+        conta["saldo"] = conta["saldo"] - valor
+
         print("Saque realizado com sucesso!")
-        print("Novo saldo: R$", conta[3])
+        print("Novo saldo: R$", conta["saldo"])
+
 
 def transferir(contas):
     print("\n=== TRANSFERÊNCIA ===")
@@ -55,17 +67,17 @@ def transferir(contas):
     origem = procurar_conta(contas, numero_origem)
     destino = procurar_conta(contas, numero_destino)
 
-    if origem == []:
+    if origem == {}:
         print("Conta de origem não encontrada.")
-    elif destino == []:
+    elif destino == {}:
         print("Conta de destino não encontrada.")
     elif valor <= 0:
         print("Valor inválido.")
-    elif valor > origem[3]:
+    elif valor > origem["saldo"]:
         print("Saldo insuficiente.")
     else:
-        origem[3] = origem[3] - valor
-        destino[3] = destino[3] + valor
+        origem["saldo"] = origem["saldo"] - valor
+        destino["saldo"] = destino["saldo"] + valor
 
         print("Transferência realizada com sucesso!")
 
@@ -77,7 +89,9 @@ def consultar_saldo(contas):
 
     conta = procurar_conta(contas, numero)
 
-    if conta == []:
+    if conta == {}:
         print("Conta não encontrada.")
     else:
-        print("Seu saldo atual é: R$", conta[3])
+        print("Número da conta:", conta["numero"])
+        print("Tipo:", conta["tipo"])
+        print("Saldo atual: R$", conta["saldo"])
