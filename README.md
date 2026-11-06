@@ -4,7 +4,7 @@ Projeto acadêmico desenvolvido em Python para representar, de forma simples, o 
 
 ---
 
-## 💡 Visão Geral
+## 💡 Visão Geral:
 
 O **Banco-FilaBank** é um sistema desenvolvido para colocar em prática conceitos fundamentais de programação através da criação de uma aplicação bancária simples.
 
@@ -12,7 +12,7 @@ A aplicação permite registrar clientes, criar suas contas e realizar operaçõ
 
 ---
 
-## 🔎 O que o sistema oferece
+## 🔎 O que o sistema oferece:
 
 * Registro de novos clientes
 * Criação de contas bancárias
@@ -23,7 +23,6 @@ A aplicação permite registrar clientes, criar suas contas e realizar operaçõ
 
 ---
 
-
-## 📚 Finalidade do Projeto
+## 📚 Finalidade do Projeto:
 
 O projeto foi desenvolvido com finalidade acadêmica, buscando exercitar conhecimentos iniciais de programação, como criação e utilização de funções, variáveis, entrada de dados, estruturas condicionais, operações matemáticas e divisão do código em diferentes arquivos.
