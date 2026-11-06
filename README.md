@@ -14,12 +14,12 @@ A aplicação permite registrar clientes, criar suas contas e realizar operaçõ
 
 ## 🔎 O que o sistema oferece:
 
-* Registro de novos clientes
-* Criação de contas bancárias
-* Consulta do saldo disponível
-* Realização de depósitos
-* Realização de saques
-* Verificação de saldo antes de efetuar um saque
+* Registro de novos clientes;
+* Criação de contas bancárias;
+* Consulta do saldo disponível;
+* Realização de depósitos;
+* Realização de saques;
+* Verificação de saldo antes de efetuar um saque.
 
 ---
 
